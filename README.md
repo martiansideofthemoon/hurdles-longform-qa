@@ -2,6 +2,8 @@
 
 This repository (in-progress) will contain the official scripts and datasets accompanying our NAACL 2021 paper, "[Hurdles to Progress in Long-form Question Answering](https://arxiv.org/abs/2103.06332)". We hope to eventually open-source our c-REALM retriever and generative model as well (hopefully by July/August 2021).
 
+So far, this codebase has generated outputs from model using c-REALM retrievals and random retrievals, scripts to compute ROUGE-L / R-Prec scores using the generations, scripts for question paraphrase classification, scripts for computing ROUGE-L bounds. You can also find the original Routing Transformer model's codebase and pretrained checkpoint trained on PG-19 out [here](https://github.com/google-research/google-research/tree/master/routing_transformer).
+
 Google Drive resources: https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7wYr2mh87sH0XNnUSJ?usp=sharing
 
 ### Setup
