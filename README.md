@@ -95,9 +95,9 @@ If you found our paper or this repository useful, please cite:
 
 ```
 @inproceedings{lfqa21,
-                author={Kalpesh Krishna and Aurko Roy and Mohit Iyyer},
-                Booktitle = {North American Association for Computational Linguistics},
-                Year = "2021",
-                Title={Hurdles to Progress in Long-form Question Answering},
-                }
+author={Kalpesh Krishna and Aurko Roy and Mohit Iyyer},
+Booktitle = {North American Association for Computational Linguistics},
+Year = "2021",
+Title={Hurdles to Progress in Long-form Question Answering},
+}
 ```
