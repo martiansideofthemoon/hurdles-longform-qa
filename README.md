@@ -20,6 +20,15 @@ pip install --editable .
 
 3. If you are interested in using the Quora Question Paraphrase classifier (used in Section 3.2 of the paper), download the `roberta-large-finetuned-qqp` folder from the repository. This model was trained by my labmate [Tu Vu](https://people.cs.umass.edu/~tuvu/).
 
+4. Download the ELI5 train, validation and test splits.
+
+```
+cd KILT
+wget http://dl.fbaipublicfiles.com/KILT/eli5-train-kilt.jsonl -O train.jsonl
+wget http://dl.fbaipublicfiles.com/KILT/eli5-dev-kilt.jsonl -O valid.jsonl
+wget http://dl.fbaipublicfiles.com/KILT/eli5-test_without_answers-kilt.jsonl -O test.jsonl
+```
+
 ### Evaluation of generations
 
 Enter the `KILT` folder and run the following command for evaluating `p=0.6` with c-REALM retrievals on the validation set:
@@ -53,6 +62,32 @@ python run_qqp.py --input_file generations/final_guess_eli5_0.6_similar_question
 ```
 
 You should get a score of 43.6%. Note that this is a lower-bound --- qualitatively we found this classifier missed several paraphrase pairs with low lexical overlap, or cases where the retrieved training set question will have a super-set of the information needed to answer the validation set question.
+
+### Lower and Upper Bounds on ROUGE-L
+
+Run the following to evaluate bounds on ROUGE-L. Make sure you have completed steps 1, 4 in the setup above. Scripts to evaluate other bounds involving training set retrieval coming soon!
+
+```
+cp generate_final_guess_bounds.py KILT/
+cd KILT
+
+# Copy input lowerbound, should get 20.0 ROUGE-L
+python generate_final_guess_bounds.py --bound_type copy_input
+
+# Random training set answer, should get 15.8-16.2 ROUGE-L depending on randomness
+python generate_final_guess_bounds.py --bound_type random_train_ans
+
+# "Performance" can be further boosted by randomly selecting from only longest answers
+# for each training set question, up to ~16.7 ROUGE-L. This result is not reported in
+# paper, but can be run using:
+python generate_final_guess_bounds.py --bound_type random_train_ans_longest
+
+# Longest gold answer upperbound, should get 21.2 ROUGE-L
+python generate_final_guess_bounds.py --bound_type longest_gold
+
+# Best gold answer upperbound, should get 26.2 ROUGE-L (takes a while to run, 45 min on single core)
+python generate_final_guess_bounds.py --bound_type best_gold
+```
 
 ### Citation
 
