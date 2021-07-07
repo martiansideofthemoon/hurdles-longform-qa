@@ -1,10 +1,14 @@
 # Hurdles to Progress in Long-form Question Answering
 
-This repository (in-progress) will contain the official scripts and datasets accompanying our NAACL 2021 paper, "[Hurdles to Progress in Long-form Question Answering](https://arxiv.org/abs/2103.06332)". We hope to eventually open-source our c-REALM retriever and generative model as well (hopefully by July/August 2021).
+This repository (in-progress) contains the official scripts and datasets accompanying our NAACL 2021 paper, "[Hurdles to Progress in Long-form Question Answering](https://arxiv.org/abs/2103.06332)". We hope to eventually open-source inference APIs for the c-REALM retriever and generative model (hopefully by August 2021).
 
-So far, this codebase has generated outputs from model using c-REALM retrievals and random retrievals, scripts to compute ROUGE-L / R-Prec scores using the generations, scripts for question paraphrase classification, scripts for computing ROUGE-L bounds. You can also find the original Routing Transformer model's codebase and pretrained checkpoint trained on PG-19 out [here](https://github.com/google-research/google-research/tree/master/routing_transformer).
+So far, this codebase has the generator checkpoints, generated outputs from model using c-REALM retrievals and random retrievals, scripts to compute ROUGE-L / R-Prec scores using the generations, scripts for question paraphrase classification, scripts for computing ROUGE-L bounds. You can also find the original Routing Transformer model's codebase and pretrained checkpoint trained on PG-19 out [here](https://github.com/google-research/google-research/tree/master/routing_transformer).
 
 Google Drive resources: https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7wYr2mh87sH0XNnUSJ?usp=sharing
+
+### Model Checkpoints
+
+The Routing Transformer checkpoint pretrained on PG-19, and the version of the model trained on ELI5 can be found [here](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-). You can play around with the first checkpoint using the API provided [here](https://github.com/google-research/google-research/blob/master/routing_transformer/routing_tf_api.py). We will release a corresponding inference API for the second checkpoint soon.
 
 ### Setup
 
