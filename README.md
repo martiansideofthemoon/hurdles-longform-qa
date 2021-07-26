@@ -18,7 +18,7 @@ The Routing Transformer checkpoint pretrained on PG-19, and the version of the m
 
 3. Edit the paths [here](https://github.com/martiansideofthemoon/hurdles-longform-qa/blob/main/routing_tf_api_generation_eli5.py#L29-L31) to point to the downloaded checkpoints. You can find the `hparams.json` file in the root folder of this repository.
 
-**Evaluation-specific Instructions**
+**Evaluation-specific setup instructions**
 
 2. Clone the [KILT repository](https://github.com/facebookresearch/KILT) in this folder and run the installation in a virtual environment.
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 pip install --editable .
 ```
 
-3. If you are interested in using the Quora Question Paraphrase classifier (used in Section 3.2 of the paper), download the `roberta-large-finetuned-qqp` folder from the repository. This model was trained by my labmate [Tu Vu](https://people.cs.umass.edu/~tuvu/).
+3. If you are interested in using the Quora Question Paraphrase classifier (used in Section 3.2 of the paper), download the `roberta-large-finetuned-qqp` folder from the repository. This model was built by [Tu Vu](https://people.cs.umass.edu/~tuvu/).
 
 4. Download the ELI5 train, validation and test splits.
 
