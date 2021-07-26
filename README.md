@@ -8,7 +8,7 @@ Google Drive resources: https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7w
 
 ### Model Checkpoints
 
-The Routing Transformer checkpoint pretrained on PG-19, and the version of the model trained on ELI5 can be found [here](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-).
+The Routing Transformer checkpoint trained on ELI5 can be found [here](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-). The link also contains the original routing transformer language model checkpoint which was trained on PG-19.
 
 ### Setup
 
