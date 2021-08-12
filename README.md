@@ -10,6 +10,9 @@ Google Drive resources: https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7w
 
 The Routing Transformer checkpoint trained on ELI5 can be found [here](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-). The link also contains the original routing transformer language model checkpoint which was trained on PG-19.
 
+c-REALM tokenized KILT Wikipedia data --- [link](https://storage.googleapis.com/rt-checkpoint/kilt_retrieval_train.zip)   
+c-REALM tokenized ELI5 training data --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)  
+
 ### Setup
 
 1. Download the `generations` folder from the Google Drive [link](https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7wYr2mh87sH0XNnUSJ?usp=sharing) into this root folder.
