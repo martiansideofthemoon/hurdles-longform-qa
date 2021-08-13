@@ -12,6 +12,7 @@ The Routing Transformer checkpoint trained on ELI5 can be found [here](https://g
 
 c-REALM tokenized KILT Wikipedia data --- [link](https://storage.googleapis.com/rt-checkpoint/kilt_retrieval_train.zip)   
 c-REALM tokenized ELI5 training data --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)  
+c-REALM TF Hub model + encoded retrieval corpora --- [link](https://storage.googleapis.com/rt-checkpoint/retriever.zip)
 
 ### Setup
 
