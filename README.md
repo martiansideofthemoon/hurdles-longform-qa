@@ -12,10 +12,10 @@ Google Drive resources: https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7w
 
 ## Model Checkpoints
 
-Routing Transformer finetuned on ELI5 --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_checkpoint.zip)
-c-REALM TF Hub model + encoded retrieval corpora --- [link](https://storage.googleapis.com/rt-checkpoint/retriever.zip)
+Routing Transformer finetuned on ELI5 --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_checkpoint.zip)  
+c-REALM TF Hub model + encoded retrieval corpora --- [link](https://storage.googleapis.com/rt-checkpoint/retriever.zip)  
 c-REALM tokenized KILT Wikipedia data --- [link](https://storage.googleapis.com/rt-checkpoint/kilt_retrieval_train.zip)   
-c-REALM tokenized ELI5 training data --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)  
+c-REALM tokenized ELI5 training data --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)
 
 The original Routing Transformer model (pretrained on PG-19) and a local attention version of it can be found in the main repository ([link](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-)).
 
