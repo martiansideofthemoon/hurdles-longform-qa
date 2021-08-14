@@ -11,7 +11,7 @@ pip install transformers
 pip install tensor2tensor
 ```
 
-For GPU support, you might need to change the version of your TensorFlow depending on the CUDA / CuDNN installation ([details](https://www.tensorflow.org/install/source#gpu)).
+For GPU support, you might need to change the version of your TensorFlow depending on the CUDA / CuDNN installation ([details](https://www.tensorflow.org/install/source#gpu)). *GPU support is strongly recommended for faster inference*.
 
 ## Model Checkpoints & Generations
 
