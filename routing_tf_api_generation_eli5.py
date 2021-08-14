@@ -25,8 +25,8 @@ import time
 import random
 
 
-VOCAB_PATH = "vocab.pg19_length8k.32768.subwords"
-HPARAMS_PATH = "hparams.json"
+VOCAB_PATH = "models/vocab.pg19_length8k.32768.subwords"
+HPARAMS_PATH = "models/hparams.json"
 CKPT_PATH = "models/eli5_checkpoint/model.ckpt-100000"
 MAX_SEQUENCE_LENGTH = 8192
 
