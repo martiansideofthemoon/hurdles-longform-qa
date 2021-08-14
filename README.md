@@ -25,13 +25,17 @@ The original Routing Transformer model (pretrained on PG-19) and a local attenti
 
 *(We have provided the pre-computed retrievals from c-REALM on ELI5, so no need to run the c-REALM retriever)*
 
-1. Download the "Routing Transformer finetuned on ELI5" model listed above.
+1. Download the "Routing Transformer finetuned on ELI5" model listed above and place it inside `models`.
 
-2. Download the `generations` folder from "Pre-computed generations & QQP classifier" listed above.
+```
+wget https://storage.googleapis.com/rt-checkpoint/eli5_checkpoint.zip
+unzip eli5_checkpoint.zip -d models
+rm eli5_checkpoint.zip
+```
 
-3. Clone the original routing transformer codebase from [here](https://github.com/google-research/google-research/tree/master/routing_transformer). Place it in the root folder. Download the checkpoints and vocabulary files from the instructions in the README out [here](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-).
+2. Download the `generations` folder from the Google Drive link listed as "Pre-computed generations & QQP classifier" above.
 
-4. Edit the paths [here](https://github.com/martiansideofthemoon/hurdles-longform-qa/blob/main/routing_tf_api_generation_eli5.py#L29-L31) to point to the downloaded checkpoints. You can find the `hparams.json` file in the root folder of this repository.
+3. Clone the original routing transformer codebase from [here](https://github.com/google-research/google-research/tree/master/routing_transformer). Place it in the root folder.
 
 5. Run [`eval_generate_eli5.py`](eval_generate_eli5.py) to generate from the model. We have provided `c-REALM` retrieval outputs in the script for the ELI5 validation / test split. For custom inputs, you will need to load the retriever and wikipedia corpus (see next section).
 
@@ -41,7 +45,19 @@ The original Routing Transformer model (pretrained on PG-19) and a local attenti
 
 1. Download the "c-REALM TF Hub model + encoded retrieval corpora" model listed above. Place it inside the `models` folder.
 
+```
+wget https://storage.googleapis.com/rt-checkpoint/retriever.zip
+unzip retriever.zip -d models
+rm retriever.zip
+```
+
 2. Download "c-REALM tokenized KILT Wikipedia data" if you are interested in retrieving from the [KILT Wikipedia corpus](https://github.com/facebookresearch/KILT#kilt-knowledge-source) and/or "c-REALM tokenized ELI5 training data" if you are interested in retrieving question paraphrases from the ELI5 training set. Place them inside the `models` folder.
+
+```
+wget https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip
+unzip eli5_retrieval_train.zip -d models
+rm eli5_retrieval_train.zip
+```
 
 3. Run [`eval_retriever_eli5.py`](eval_retriever_eli5.py) to retrieve using `c-REALM`. Modify the `--retrieval_corpus` flag to choose the retrieval corpus.
 
