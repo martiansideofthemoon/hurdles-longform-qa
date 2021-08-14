@@ -37,6 +37,12 @@ rm eli5_checkpoint.zip
 
 3. Clone the original routing transformer codebase from [here](https://github.com/google-research/google-research/tree/master/routing_transformer). Place it in the root folder.
 
+```
+git clone https://github.com/google-research/google-research
+mv google-research/routing_transformer .
+rm -rf google-research
+```
+
 5. Run [`eval_generate_eli5.py`](eval_generate_eli5.py) to generate from the model. We have provided `c-REALM` retrieval outputs in the script for the ELI5 validation / test split. For custom inputs, you will need to load the retriever and wikipedia corpus (see next section).
 
 ## Retrievals from c-REALM
