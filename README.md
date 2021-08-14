@@ -2,7 +2,7 @@
 
 This repository contains the official scripts and datasets accompanying our NAACL 2021 paper, "[Hurdles to Progress in Long-form Question Answering](https://arxiv.org/abs/2103.06332)". This repository supports **inference from the pretrained retriever / generator** & includes **evaluation scripts**.
 
-Specifically, this codebase contains the model checkpoints, inference scripts for the retriever / generator model, generated outputs from model using c-REALM retrievals and random retrievals, scripts to compute ROUGE-L / R-Prec scores using the generations, scripts for question paraphrase classification, scripts for computing ROUGE-L bounds. You can also find the original Routing Transformer model's codebase and pretrained checkpoint trained on PG-19 out [here](https://github.com/google-research/google-research/tree/master/routing_transformer).
+Specifically, this codebase contains the model checkpoints, inference scripts for the retriever / generator model, generated outputs from model using c-REALM retrievals and random retrievals, scripts to compute ROUGE-L / R-Prec scores using the generations, scripts for question paraphrase classification, scripts for computing ROUGE-L bounds. You can also find the original Routing Transformer model's codebase [here](https://github.com/google-research/google-research/tree/master/routing_transformer).
 
 ## Setup
 
