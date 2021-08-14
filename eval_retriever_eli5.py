@@ -13,7 +13,7 @@ from tensor2tensor.data_generators import text_encoder
 import tensorflow_hub as hub
 from transformers import AutoTokenizer
 
-VOCAB_PATH = "/mnt/nfs/work1/miyyer/simengsun/in-book-retrieval/RT-data/vocab.pg19_length8k.32768.subwords"
+VOCAB_PATH = "vocab.pg19_length8k.32768.subwords"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--retrieval_corpus', default="eli5_train", type=str, choices=["eli5_train", "kilt_wiki"])
