@@ -6,8 +6,10 @@ Specifically, this codebase contains the model checkpoints, inference scripts fo
 
 ## Setup
 
-`pip install transformers`
-`pip install tensor2tensor`
+```
+pip install transformers
+pip install tensor2tensor
+```
 
 ## Model Checkpoints & Generations
 
