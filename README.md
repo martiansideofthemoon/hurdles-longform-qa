@@ -18,7 +18,7 @@ Pre-computed generations & QQP classifier: [link](https://drive.google.com/drive
 
 The original Routing Transformer model (pretrained on PG-19) and a local attention version of it can be found in the main repository ([link](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-)).
 
-## Generating from the Model
+## Generating from the Routing Transformer
 
 *(We have provided the pre-computed retrievals from c-REALM on ELI5, so no need to run the c-REALM retriever)*
 
@@ -42,7 +42,7 @@ The original Routing Transformer model (pretrained on PG-19) and a local attenti
 
 3. Run [`eval_retriever_eli5.py`](eval_retriever_eli5.py) to retrieve using `c-REALM`. Modify the `--retrieval_corpus` flag to choose the retrieval corpus.
 
-## Evaluation of generations
+## Evaluation of Outputs
 
 ### Setup
 
