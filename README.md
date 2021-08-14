@@ -4,18 +4,17 @@ This repository contains the official scripts and datasets accompanying our NAAC
 
 Specifically, this codebase contains the model checkpoints, inference scripts for the retriever / generator model, generated outputs from model using c-REALM retrievals and random retrievals, scripts to compute ROUGE-L / R-Prec scores using the generations, scripts for question paraphrase classification, scripts for computing ROUGE-L bounds. You can also find the original Routing Transformer model's codebase and pretrained checkpoint trained on PG-19 out [here](https://github.com/google-research/google-research/tree/master/routing_transformer).
 
-Google Drive resources: https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7wYr2mh87sH0XNnUSJ?usp=sharing
-
 ## Setup
 
 `pip install tensor2tensor`
 
-## Model Checkpoints
+## Model Checkpoints & Generations
 
-Routing Transformer finetuned on ELI5 --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_checkpoint.zip)  
-c-REALM TF Hub model + encoded retrieval corpora --- [link](https://storage.googleapis.com/rt-checkpoint/retriever.zip)  
-c-REALM tokenized KILT Wikipedia data --- [link](https://storage.googleapis.com/rt-checkpoint/kilt_retrieval_train.zip)   
-c-REALM tokenized ELI5 training data --- [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)
+Routing Transformer finetuned on ELI5: [link](https://storage.googleapis.com/rt-checkpoint/eli5_checkpoint.zip)  
+c-REALM TF Hub model + encoded retrieval corpora: [link](https://storage.googleapis.com/rt-checkpoint/retriever.zip)  
+c-REALM tokenized KILT Wikipedia data: [link](https://storage.googleapis.com/rt-checkpoint/kilt_retrieval_train.zip)   
+c-REALM tokenized ELI5 training data: [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)
+Pre-computed generations & QQP classifier: [link](https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7wYr2mh87sH0XNnUSJ?usp=sharing)
 
 The original Routing Transformer model (pretrained on PG-19) and a local attention version of it can be found in the main repository ([link](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-)).
 
