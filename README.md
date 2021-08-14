@@ -11,6 +11,8 @@ pip install transformers
 pip install tensor2tensor
 ```
 
+For GPU support, you might need to change the version of your TensorFlow depending on the CUDA / CuDNN installation ([details](https://www.tensorflow.org/install/source#gpu)).
+
 ## Model Checkpoints & Generations
 
 Routing Transformer finetuned on ELI5: [link](https://storage.googleapis.com/rt-checkpoint/eli5_checkpoint.zip)  
@@ -35,15 +37,7 @@ rm eli5_checkpoint.zip
 
 2. Download the `generations` folder from the Google Drive link listed as "Pre-computed generations & QQP classifier" above.
 
-3. Clone the original routing transformer codebase from [here](https://github.com/google-research/google-research/tree/master/routing_transformer). Place it in the root folder.
-
-```
-git clone https://github.com/google-research/google-research
-mv google-research/routing_transformer .
-rm -rf google-research
-```
-
-5. Run [`eval_generate_eli5.py`](eval_generate_eli5.py) to generate from the model. We have provided `c-REALM` retrieval outputs in the script for the ELI5 validation / test split. For custom inputs, you will need to load the retriever and wikipedia corpus (see next section).
+3. Run [`eval_generate_eli5.py`](eval_generate_eli5.py) to generate from the model. We have provided `c-REALM` retrieval outputs in the script for the ELI5 validation / test split. For custom inputs, you will need to load the retriever and wikipedia corpus (see next section).
 
 ## Retrievals from c-REALM
 
