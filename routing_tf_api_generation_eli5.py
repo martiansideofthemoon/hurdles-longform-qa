@@ -23,12 +23,11 @@ import routing_transformer.utils as utils
 import numpy as np
 import time
 import random
-from scipy.special import log_softmax
 
 
-VOCAB_PATH = "/mnt/nfs/work1/miyyer/simengsun/in-book-retrieval/RT-data/vocab.pg19_length8k.32768.subwords"
-HPARAMS_PATH = "/mnt/nfs/work1/miyyer/simengsun/in-book-retrieval/RT-models/rt-checkpoint/hparams.json"
-CKPT_PATH = "/mnt/nfs/work1/miyyer/kalpesh/projects/retrieval-lm/routing_transformer/models/eli5_checkpoint/model.ckpt-100000"
+VOCAB_PATH = "vocab.pg19_length8k.32768.subwords"
+HPARAMS_PATH = "hparams.json"
+CKPT_PATH = "models/eli5_checkpoint/model.ckpt-100000"
 MAX_SEQUENCE_LENGTH = 8192
 
 
