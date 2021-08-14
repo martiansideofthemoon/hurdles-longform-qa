@@ -13,7 +13,7 @@ Specifically, this codebase contains the model checkpoints, inference scripts fo
 Routing Transformer finetuned on ELI5: [link](https://storage.googleapis.com/rt-checkpoint/eli5_checkpoint.zip)  
 c-REALM TF Hub model + encoded retrieval corpora: [link](https://storage.googleapis.com/rt-checkpoint/retriever.zip)  
 c-REALM tokenized KILT Wikipedia data: [link](https://storage.googleapis.com/rt-checkpoint/kilt_retrieval_train.zip)   
-c-REALM tokenized ELI5 training data: [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)
+c-REALM tokenized ELI5 training data: [link](https://storage.googleapis.com/rt-checkpoint/eli5_retrieval_train.zip)  
 Pre-computed generations & QQP classifier: [link](https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7wYr2mh87sH0XNnUSJ?usp=sharing)
 
 The original Routing Transformer model (pretrained on PG-19) and a local attention version of it can be found in the main repository ([link](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-)).
@@ -24,7 +24,7 @@ The original Routing Transformer model (pretrained on PG-19) and a local attenti
 
 1. Download the "Routing Transformer finetuned on ELI5" model listed above.
 
-2. Download the `generations` folder from the Google Drive [link](https://drive.google.com/drive/folders/1kBIo26SdjHJUKe7wYr2mh87sH0XNnUSJ?usp=sharing) into this root folder.
+2. Download the `generations` folder from "Pre-computed generations & QQP classifier" listed above.
 
 3. Clone the original routing transformer codebase from [here](https://github.com/google-research/google-research/tree/master/routing_transformer). Place it in the root folder. Download the checkpoints and vocabulary files from the instructions in the README out [here](https://github.com/google-research/google-research/tree/master/routing_transformer#pre-trained-pg-19-checkpoint-).
 
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 pip install --editable .
 ```
 
-3. If you are interested in using the Quora Question Paraphrase classifier (used in Section 3.2 of the paper), download the `roberta-large-finetuned-qqp` folder from the repository. This model was built by [Tu Vu](https://people.cs.umass.edu/~tuvu/).
+3. If you are interested in using the Quora Question Paraphrase classifier (used in Section 3.2 of the paper), download the `roberta-large-finetuned-qqp` folder from "Pre-computed generations & QQP classifier" listed above. This model was built by [Tu Vu](https://people.cs.umass.edu/~tuvu/).
 
 4. Download the ELI5 train, validation and test splits.
 
