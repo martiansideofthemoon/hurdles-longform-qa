@@ -37,7 +37,7 @@ rm eli5_checkpoint.zip
 
 2. Download the `generations` folder from the Google Drive link listed as "Pre-computed generations & QQP classifier" above.
 
-3. Run [`eval_generate_eli5.py`](eval_generate_eli5.py) to generate from the model. We have provided `c-REALM` retrieval outputs in the script for the ELI5 validation / test split. For custom inputs, you will need to load the retriever and wikipedia corpus (see next section).
+3. Run [`eval_generate_eli5.py`](eval_generate_eli5.py) to generate from the model. We have provided `c-REALM` retrieval outputs in the script for the ELI5 validation / test split. For custom inputs, you will need to load the retriever and wikipedia corpus (see next section). Generation is on the slower side (~4 minutes per answer), we hope to switch to the faster decoding mode in the Routing Transformer model in the near future.
 
 ## Retrievals from c-REALM
 
