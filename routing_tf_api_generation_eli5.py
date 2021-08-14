@@ -23,7 +23,6 @@ import routing_transformer.utils as utils
 import numpy as np
 import time
 import random
-from scipy.special import log_softmax
 
 
 VOCAB_PATH = "vocab.pg19_length8k.32768.subwords"
