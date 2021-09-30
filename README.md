@@ -150,7 +150,7 @@ python generate_final_guess_bounds.py --bound_type best_gold
 
 ## Human Annotations
 
-In the Drive link above, we have also added the human annotations used to generate the results in Table 3 and Table 15, under `human_annotations/ab_testing`. You can directly see the folder [here](https://drive.google.com/drive/folders/119bkIGWCZnoUaTZlkhnGLluPWr33rwg3?usp=sharing). Each JSONL file corresponds to an experiment conducted in Table 15, which the folders contain the HTML files with answer pairs shown to annotators in a random order. The names of the files should be self-explanatory.
+In the Drive link above, we have also added the human annotations used to generate the results in Table 3 and Table 15, under `human_annotations/ab_testing`. You can see the folder [here](https://drive.google.com/drive/folders/119bkIGWCZnoUaTZlkhnGLluPWr33rwg3?usp=sharing). Each JSONL file corresponds to an experiment conducted in Table 15, which the folders contain the HTML files with answer pairs shown to annotators in a random order. The names of the files should be self-explanatory.
 
 Each JSONL file contains the KILT-formatted ELI5 QA pair for validation instances for which we have annotations. Here are the description of various keys ---
 
