@@ -148,6 +148,20 @@ python generate_final_guess_bounds.py --bound_type longest_gold
 python generate_final_guess_bounds.py --bound_type best_gold
 ```
 
+## Human Annotations
+
+In the Drive link above, we have also added the human annotations used to generate the results in Table 3 and Table 15, under `human_annotations/ab_testing`. You can directly see the folder [here](https://drive.google.com/drive/folders/119bkIGWCZnoUaTZlkhnGLluPWr33rwg3?usp=sharing). Each JSONL file corresponds to an experiment conducted in Table 15, which the folders contain the HTML files with answer pairs shown to annotators in a random order. The names of the files should be self-explanatory.
+
+Each JSONL file contains the KILT-formatted ELI5 QA pair for validation instances for which we have annotations. Here are the description of various keys ---
+
+1. `human_annotation_url` - The URL of the HTML file shown to the annotator, a copy of this file is also present in the same folder.
+2. `id` - The KILT / ELI5 id of the instance.
+3. `input` - The question asked to the model.
+4. `Which generation answers the question better?` - (if present) the human annotation for this question, which will be a key in the same dictionary.
+5. `Which answer is more coherent?` - (if present) the human annotation for this question, which will be a key in the same dictionary.
+6. `Which answer is more factually correct + sensical?` - (if present) the human annotation for this question, which will be a key in the same dictionary.
+7. Two keys corresponding to the A/B for the experiment, with the answers. For the `gold_vs_*` experiments, the longest gold answer was shown to users.
+
 ## Citation
 
 If you found our paper or this repository useful, please cite:
