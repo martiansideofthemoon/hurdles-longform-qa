@@ -7,7 +7,7 @@ Specifically, this codebase contains the model checkpoints, inference scripts fo
 ## Setup
 
 ```
-python -m virtualenv rankgen-venv
+python -m virtualenv lfqa-venv
 source lfqa-venv/bin/activate
 pip install transformers
 pip install tensor2tensor
